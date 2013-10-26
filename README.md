@@ -24,5 +24,7 @@ $ gcc -fPIC -shared service/changyy/srv_changyy.c  -o output/changyy.so -Iprebui
 
 ```
 $ sudo cp output/changyy.so /usr/lib/c_icap/
+$ sudo vim /etc/c-icap/c-icap.conf
+Service changyy changyy.so
 $ sudo /etc/init.d/c-icap restart
 ```
